@@ -1,0 +1,82 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,400italic,700|Sansita+One);
+
+ :root {
+    --primary-color: #68998D;
+    --secondary-color: #536390;
+    --font-color: #424242;
+    --bg-color: #fff;
+    --heading-color: #292922;
+    --dark-color: #272727;
+    --dark-opacity: 0.9;
+    --link-color: #0B5345
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  background-color: var(--bg-color);
+  color: var(--font-color);
+  max-width: 75%;
+  margin: 0 auto;
+  font-size: calc(1rem + 0.25vh);
+}
+
+
+h1 {
+    color: var(--heading-color);
+    font-family: "Sansita One", serif;
+    font-size: 2rem;
+    margin-bottom: 1vh;
+}
+
+p {
+  font-size: 1.1rem;
+  line-height: 1.6rem;
+}
+
+ul {
+    list-style:none;
+    padding-left:0;
+    font-size: 1.1rem;
+}
+
+li{
+    margin: 10px 0;
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+  border-bottom: 3px solid transparent;
+  font-weight: normal;
+  &:hover, &:focus {
+      border-bottom: 3px solid currentColor;
+  }
+}
+
+section {
+  max-width: 68%;
+  margin: 0 auto;
+}
+
+.post-meta {
+  font-size: 1rem;
+  font-style: italic;
+  display: block;
+  margin-bottom: 4vh;
+  color: var(--secondary-color);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 0;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1.5em auto;
+    padding: 2;
+}
