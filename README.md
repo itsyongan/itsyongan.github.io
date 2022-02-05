@@ -1,2 +1,2 @@
-# linynjosh.github.io
-Personal portfolio
+# dark-mode-website
+Sample website for dark mode

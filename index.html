@@ -1,60 +1,262 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <title>Josh Lin</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="style.css"/>
-  <script src="https://kit.fontawesome.com/3cb16648c5.js" crossorigin="anonymous"></script>
+    <nav>
+        <div>
+            <p>
+                <meta charset="utf-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+                <link rel="stylesheet" type="text/css" href="style.css"/>
+                <script src="https://kit.fontawesome.com/3cb16648c5.js" crossorigin="anonymous"></script>
+                <a href="https://github.com/linynjosh"><i class="fab fa-github-square"></i></a>&emsp;
+                <a href="https://www.linkedin.com/in/linynjosh/"><i class="fab fa-linkedin"></i></a>&emsp;
+                <a href="JoshLin_Resume.pdf"><i class="fas fa-file"></i> Resume</a>&emsp;
+            </p>
+        </div>
+    </nav>
+    <script src="main.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300&family=Montserrat:wght@200&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <title>Esther's Portfolio</title>
+
 </head>
+
+<!-- Make a toggle button -->
+<header>
+    <button onclick="changeMode()">
+        <i class="fas fa-adjust"></i>
+    </button>
+</header>
+
 <body>
-  <nav>
-    <div>
-      <p>
-        <a href="https://github.com/linynjosh"><i class="fab fa-github-square"></i></a>&emsp;
-        <a href="https://www.linkedin.com/in/linynjosh/"><i class="fab fa-linkedin"></i></a>&emsp;
-        <a href="JoshLin_Resume.pdf"><i class="fas fa-file"></i> Resume</a>&emsp;
-      </p>
-    </div>
-  </nav>
-  <section>
-      <article class="post">
-        <h3>Josh Lin</h3>
 
-        <p></p>
-        <p> I am a second-year computer science student at the University of British Columbia. </p>
-        <p> My interests in programming include data visualization, data analysis, and web design. </p>
+<h1>Joshua Lin</h1>
 
-        <hr>
+<p> Hi, I am Josh.
+    I am a second-year computer science student at the University of British Columbia.
+    Here are some projects I've been working on.
+    <i class="fas fa-lightbulb"></i>
+</p>
 
-        <h3>Projects</h3>
-        <p></p>
-        <ul style="list-style-type:none;">
-          <li><i class="fas fa-calendar-times"></i><strong>&emsp; TODO-APPLICATION </strong><a href="https://github.com/linynjosh/Todo-Application">
-                | github project link</a><br> A planner app that manages different tasks by categorizing them according to their corresponding due dates or tags.</li>
-          <li><i class="fas fa-music"></i><strong>&emsp; RAP OR COUNTRY?</strong><a href="https://github.com/linynjosh/music-lyric-vis">
-            | github project link</a><br> An analysis comparing top Billboard rap and country music based on their average word count,
-            average word length, lexical diversity, word frequency, and text sentiment.</li>
-          <li><i class="fas fa-city"></i><strong>&emsp; CRIME AND DEMOGRAPHICS: NYC</strong><a href="https://nypd-crime-vis.herokuapp.com/">
-            | web app link</a><br> A streamlit web app hosted on Heroku visualizing 5+ million instances of crime in New York City.
-            The visualization is based on the offender's race, gender, age, offense, crime location, and date.</li>
-          <li><i class="fas fa-globe-americas"></i> <strong>&emsp; EARTHQUAKE EFFECTS</strong><a href="https://linynjosh.github.io/earthquake-vis/">
-            | website link</a><br> A website containing Kepler.GL visualizations of major international earthquakes
-            based on deaths and injuries caused, and the magnitude and depth of the earthquake. Every earthquake contains one of the following characteristics: approximately $1 million or more damage, 10+ deaths,
-            magnitudes of at least 7.5, modified Mercalli intensity X or greater, or a tsunami generated.</li>
-          <li><i class="fas fa-satellite"></i><strong>&emsp; THE SATELLITES RACE: ROUND 1</strong><a href="https://satellite-vis.herokuapp.com/">
-            | web app link</a><br> An interactive web app that shows the number of satellites launched and operated by a country at any specific year spanning from 1975-2020.
-          The visualization is based on the purposes of the satellites – military, civil, commercial, and government – of each country from 1975-2020.</li>
-          <li><i class="fas fa-piggy-bank"></i><strong>&emsp; BANK-APPLICATION </strong><a href="https://github.com/linynjosh/Banking-Application">
-            | github project link</a><br> A bank application that has a menu with functions such as check balance,
-            deposit, withdraw, view previous transaction, and exit</li>
-            <i> firstname.lastname@department.company.com </i> along with a random twelve character password. </li>
-        </ul>
 
-        <hr>
+<!-- Comment -->
+<h2>CURRENT ONGOING PROJECT</h2>
+<p> This UBC query explorer I am working on is a simple database that provides a list of either UBC courses
+    or rooms given a query with a matching criteria. Specifically, it allows users to add data sets of UBC courses,
+    and then proceeds to make some query like show me all courses with an average > 60% or show me all courses that
+    are taught by this instructor. The project consists mostly of TypeScript for the backend, and the requests and
+    results are in JSON. Most of the code involves mostly asynchronous code, using promises. Tests are written with
+    Mocha and Chai.
+</p>
+<p>This project can be found on
+    <a href="https://github.com/linynjosh/UBC-Query-Explorer"> Github</a>.
+</p>
 
-    </article>
-  </section>
+
+<h2>C++ Project</h2>
+<table>
+
+    <colgroup>
+        <col span="1" style="width:30%">
+        <col span="1" style="width:70%">
+    </colgroup>
+
+    <!-- This is the table body -->
+    <tbody>
+
+    <!-- Row 1: Project 1 -->
+    <tr>
+        <td><img src="imgs/dfsrain.gif" alt="Girl in a jacket" style="width:100px;height:100px;">
+            <img src="imgs/bfsrain.gif" alt="Girl in a jacket" style="width:100px;height:100px;">
+            <img src="imgs/bfsgrid.gif" alt="Girl in a jacket" style="width:100px;height:100px;">
+            <img src="imgs/dfsgrid.gif" alt="Girl in a jacket" style="width:100px;height:100px;">
+            <img src="imgs/bfsgrad.gif" alt="Girl in a jacket" style="width:100px;height:100px;">
+            <img src="imgs/dfsgrad.gif" alt="Girl in a jacket" style="width:100px;height:100px;">
+            <img src="imgs/bfssolid.gif" alt="Girl in a jacket" style="width:100px;height:100px;">
+            <img src="imgs/dfssolid.gif" alt="Girl in a jacket" style="width:100px;height:100px;">
+            <img src="imgs/bfsrain.gif" alt="Girl in a jacket" style="width:100px;height:100px;">
+        <td>
+
+            <h3> FLOOD FILL </h3>
+            <p> A program that executes a "flood fill" on a PNG image when specified a point on the image and a fill
+                pattern.
+                The code uses a breadth-first-search and depth-first-search to create fill algorithms to fill images
+                with rainbow
+                solid, gradient, and grid fill patterns. </p>
+            <p>
+                <a href="https://github.com/linynjosh/Flood-Fills">
+                    <i class="fab fa-github-square"></i> github
+                </a>
+            </p>
+
+        </td>
+
+    </tr>
+
+    </tbody>
+
+</table>
+
+<!-- We can also list out projects in table form -->
+<h2>Java Project</h2>
+<table>
+
+    <colgroup>
+        <col span="1" style="width:30%">
+        <col span="1" style="width:70%">
+    </colgroup>
+
+    <!-- This is the table body -->
+    <tbody>
+
+    <!-- Row 1: Project 1 -->
+    <tr>
+        <td><img src="imgs/sunny.png" alt="Girl in a jacket" style="width:100px;height:70px;">
+            <img src="imgs/cloud.png" alt="Girl in a jacket" style="width:100px;height:70px;">
+            <img src="imgs/snowflake.png" alt="Girl in a jacket" style="width:100px;height:70px;">
+            <img src="imgs/cloudy.png" alt="Girl in a jacket" style="width:100px;height:70px;">
+            <img src="imgs/humid.png" alt="Girl in a jacket" style="width:100px;height:70px;">
+            <img src="imgs/rain.png" alt="Girl in a jacket" style="width:100px;height:70px;"></td>
+
+        <td>
+
+            <h3> TODO-APPLICATION </h3>
+            <p> A planner app that manages different tasks by categorizing them according to their corresponding due
+                dates or tags.
+                Included functionality to add, remove, and view tasks and reminder while reading in daily weather and
+                news data
+                from <a href="https://openweathermap.org/">
+                    </i> openweathermap.org
+                </a> and <a href="https://newsapi.org/">
+                    </i> newsapi.org
+                </a> from APIs according to user scanner input. </p>
+            <p>
+                <a href="https://github.com/linynjosh/Todo-Application">
+                    <i class="fab fa-github-square"></i> github
+                </a>
+            </p>
+
+        </td>
+
+    </tr>
+
+
+    </tbody>
+
+</table>
+
+
+<h2>Python Projects</h2>
+<table>
+
+    <colgroup>
+        <col span="1" style="width:30%">
+        <col span="1" style="width:70%">
+    </colgroup>
+
+    <!-- This is the table body -->
+    <tbody>
+    <!-- Row 3: Project 3 -->
+    <tr>
+        <td><img src="imgs/earth.gif"></td>
+
+        <td>
+
+            <h3> EARTHQUAKE EFFECTS </h3>
+            <p> A website containing Kepler.GL visualizations of major international earthquakes
+                based on deaths and injuries caused, and the magnitude and depth of the earthquake. Every earthquake
+                contains one of the following characteristics: approximately $1 million or more damage, 10+ deaths,
+                magnitudes of at least 7.5, modified Mercalli intensity X or greater, or a tsunami generated. </p>
+            <p>
+                <a href="https://github.com/linynjosh/earthquake-vis">
+                    <i class="fab fa-github-square"></i> github
+                </a>
+                <a href="https://linynjosh.github.io/earthquake-vis/">
+                    <i class="fas fa-globe-americas"></i> web app link
+                </a>
+            </p>
+
+        </td>
+
+    </tr>
+
+    <!-- Row 1: Project 1 -->
+    <tr>
+        <td><img src="imgs/demo.gif"></td>
+
+        <td>
+
+            <h3> RAP OR COUNTRY? </h3>
+            <p> An analysis comparing top Billboard rap and country music based on their average word count,
+                average word length, lexical diversity, word frequency, and text sentiment. </p>
+            <p>
+                <a href="https://github.com/linynjosh/music-lyric-vis">
+                    <i class="fab fa-github-square"></i> github
+                </a>
+            </p>
+
+        </td>
+
+    </tr>
+
+    <!-- Row 2: Project 2 -->
+    <tr>
+        <td><img src="imgs/lexi.gif"></td>
+        <td>
+
+            <h3> CRIME AND DEMOGRAPHICS: NYC </h3>
+            <p> A streamlit web app hosted on Heroku visualizing 5+ million instances of crime in New York City.
+                The visualization is based on the offender's race, gender, age, offense, crime location, and date.</p>
+            <p>
+                <a href="https://github.com/linynjosh/nypd-crime-vis">
+                    <i class="fab fa-github-square"></i> github
+                </a>
+                <a href="https://nypd-crime-vis.herokuapp.com/">
+                    <i class="fas fa-city"></i> web app link
+                </a>
+            </p>
+
+        </td>
+
+    </tr>
+
+    <tr>
+        <td><img src="imgs/satellites.png" alt="Girl in a jacket" style="width:467px;height:265px;"></td>
+        <td>
+            <h3> THE SATELLITES RACE: ROUND 1 </h3>
+            <p> A planner app that manages different tasks by categorizing them according to their corresponding due
+                dates or tags.
+                Included functionality to add, remove, and view tasks and reminder while reading in daily weather and
+                news data
+            </p>
+            <p>
+                <a href="https://satellite-vis.herokuapp.com/">
+                    <i class="fab fa-github-square"></i> github
+                </a>
+            </p>
+
+        </td>
+
+    </tr>
+
+    </tbody>
+
+</table>
+
+
 </body>
+
+<footer>
+    <p>Made by Joshua Lin</p>
+    <br>
+    <p> Jan 28 2022</p>
+</footer>
+
 </html>
