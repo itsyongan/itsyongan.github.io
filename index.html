@@ -1,413 +1,221 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 
 <head>
-    <nav>
-        <div>
-            <p>
-                <meta charset="utf-8">
-                <meta name="viewport" content="width=device-width, initial-scale=1">
-                <link rel="stylesheet" type="text/css" href="style.css"/>
-                <script src="https://kit.fontawesome.com/3cb16648c5.js" crossorigin="anonymous"></script>
-                <a href="https://github.com/linynjosh"><i class="fab fa-github-square"></i></a>&emsp;
-                <a href="https://www.linkedin.com/in/linynjosh/"><i class="fab fa-linkedin"></i></a>&emsp;
-                <a href="JoshLin_Resume.pdf"><i class="fas fa-file"></i> Resume</a>&emsp;
-            </p>
-        </div>
-    </nav>
-    <script src="main.js"></script>
-    <link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="utf-8">
+  <!--<meta http-equiv="X-UA-Compatible" content="chrome=1">-->
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300&family=Montserrat:wght@200&display=swap"
-          rel="stylesheet">
+  <title>Joshua Lin</title>
+  <link rel="icon" type="image/jpg" href="figs/oate.jpg"/>
+  <script src="script.js"></script>
 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
-    <title>Josh's Portfolio</title>
+  <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VQ7CXV8TXT"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
+      gtag('config', 'G-VQ7CXV8TXT');
+    </script>
+
+  <!-- styLing -->
+  <Link rel="stylesheet" href="styles.css">
+  <Link rel="preconnect" href="https://fonts.googleapis.com">
+  <Link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <Link href="https://fonts.googleapis.com/css2?family=Saira:wght@200;500&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width">
+  <script src="https://kit.fontawesome.com/3cb16648c5.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300&family=Montserrat:wght@200;300&family=Noto+Sans+TC:wght@100;300&family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
-
-<!-- Make a toggle button -->
-<header>
-    <button onclick="changeMode()">
-        <i class="fas fa-adjust"></i>
-    </button>
-</header>
 
 <body>
 
-<h1>Joshua Lin</h1>
+  <!-- header -->
+  <section>
+    <div id="title">
+      <h1>Joshua Lin 林詠安</h1>
+    </div>
 
-<p> Hi, I am Josh.
-    I am a second-year Computer Science student at the University of British Columbia.
-    Here are some projects I have been working on.
-    <i class="fas fa-lightbulb"></i>
-</p>
+    <div id="button">
+      <button onclick="changeMode()">
+        <i class="fa fa-solid fa-lightbulb"></i>
+      </button>
+    </div>
 
-<h2> Google Summer of Code
-    <a href="https://medium.com/@linynjosh/my-google-summer-of-code-gsoc-journey-22ab41b22af5">
-        - My GSoC Journey
-    </a>
-</h2>
-<table>
+    <!-- blurb -->
+    <table>
+        <caption align="bottom" text-align="center">
+            <div align="center">
+            <a href="assets/resume.pdf">
+                cv
+            </a> &nbsp;&nbsp;
+              <a href="https://github.com/linynjosh">
+                <i class="fa fa-brands fa-github"></i>
+              </a> &nbsp;
+              <a href="https://www.linkedin.com/in/linynjosh/">
+                <i class="fa fa-linkedin-square"></i>
+              </a>
+                <a href="https://www.instagram.com/joshhliin/?next=%2F">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+              </a>
+            </div>
+        </caption>
+        <colgroup>
+             <col span="1" style="width: 20%;">
+             <col span="1" style="width: 70%;">
+         </colgroup>
+      <tbody>
+        <!-- on my desk -->
+        <tr>
+          <td>
+              <img class="circular-square" src="imgs/happy_me.jpg" width="80%">
+          </td>
+          <td>
+              <p>
+                  Hello! I'm a UBC computer science student, enthusiastic about programming, technology, and applying these skills to real-world challenges.
+              </p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
 
+  </section>
+
+  <br>
+
+  <!-- papers -->
+
+  <section>
+    <h2>Open Source Work</h2>
+    <table>
     <colgroup>
-        <col span="1" style="width:30%">
-        <col span="1" style="width:70%">
-    </colgroup>
+         <col span="1" style="width: 20%;">
+         <col span="1" style="width: 80%;">
+     </colgroup>
+      <col style="width:120px">
+      <tbody>
+          <!-- paper -->
+          <tr>
+            <td><img src="imgs/NTIA.png"></td>
+            <td>
+                <div class="paper">
+                  <div class="paper-title">
+                    <a href="https://github.com/spdx/ntia-conformance-checker">
+                        SPDX: The NTIA Conformance Checker
+                    </a>
+                  </div>
+                    <strong>Joshua Lin</strong>,
+                    <a href="https://github.com/jspeed-meyers">John Speed Meyers</a>,
+                    <a href="https://github.com/goneall">Gary O'Neal</a>
+                    <br>
+                    GSoC, 2022
+                    <br>
+                    <div class="paper-Links">
+                      [<a href="https://spdx.github.io/spdx-spec/v2.3/how-to-use/#k22-mapping-ntia-minimum-elements-to-spdx-fields">more info</a>]
+                    </div>
+                    <div class="paper-summary">
+                        This tool determines whether a SPDX software bill of materials (SBOM) document contains the National Telecommunications and Information Administration (NTIA) "minimum elements."
+                    </div>
+                </div>
+            </td>
+          </tr>
 
-    <!-- This is the table body -->
-    <tbody>
+      </tbody>
+    </table>
+  </section>
 
-    <!-- Row 1: Project 1 -->
-    <tr>
+  <br>
+
+    <!-- experience -->
+  <section>
+    <h2>Upcoming</h2>
+    <ul>
+        <li>software development engineer intern @ Amazon (Summer 2023)</li>
+    </ul>
+  </section>
+
+  <br>
+
+  <!-- experience -->
+  <section>
+    <h2>Experience</h2>
+    <ul>
+        <li>software engineer intern @ SAP, HANA and Analytics (2022)</li>
+        <li>open source contributor @ Google Summer of Code, SPDX &nbsp; (2022)</li>
+    </ul>
+  </section>
+
+  <br>
+
+  <!-- teaching -->
+  <section>
+    <h2>Teaching</h2>
+    <ul>
+        <li><a href="https://courses.students.ubc.ca/cs/courseschedule?pname=subjarea&tname=subj-course&dept=CPSC&course=210">CPSC 210 Software Construction</a> @ UBC (2022, teaching assistant)</li>
+        <li><a href="https://courses.students.ubc.ca/cs/courseschedule?pname=subjarea&tname=subj-course&dept=CPSC&course=103">CPSC 103 Introduction to Systematic Program Design</a> @ UBC (2022, teaching assistant)</li>
+    </ul>
+  </section>
+
+  <br>
+
+
+  <section>
+    <h2>Fun</h2>
+    <table>
+    <colgroup>
+         <col span="1" style="width: 20%;">
+         <col span="1" style="width: 80%;">
+     </colgroup>
+      <col style="width:120px">
+      <tbody>
+
+          <!-- on my desk -->
+        <tr>
+          <td><img src="imgs/cats.jpg"></td>
+          <td>
+            <strong>
+                <br>
+              Playing with my cats</br>
+            </strong>
             <br>
-            <img src="imgs/Linux.png" alt="Girl in a jacket" style="width:300px;height:22.34px;">
-            <br>
-            <img src="imgs/GSoCImage.png" alt="Girl in a jacket" style="width:115.6px;height:65.04px;">
-            <img src="imgs/plus.png" alt="Girl in a jacket" style="width:68.8px;height:68.8px;">
-            <img src="imgs/SPDX.png" alt="Girl in a jacket" style="width:115.6px;height:65.04px;">
-
-
-            <h3> SBOM Conformance Checker </h3>
-            <p> The SBOM Conformance Checker is a tool that checks whether a software bill of materials (SBOM)
-                in <a href="https://github.com/spdx/ntia-conformance-checker"> SPDX
-                </a> format conforms to the <a href="https://www.ntia.doc.gov/files/ntia/publications/sbom_minimum_elements_report.pdf"> NTIA's
-    </a> minimum elements guidance. An SBOM model achieves
-                systematic sharing by tracing component metadata, enabling mapping to other sources of
-                information, while tying the metadata to software as it moves down the supply chain before deployment. This project helps <a href="https://github.com/spdx/ntia-conformance-checker"> SPDX </a>
-                scale the SBOM model globally, since it addresses the
-                problem of universally identifying and defining certain aspects of software components
-                to allow the data to be effectively and efficiently consumed by downstream users.
-</p><p>The GitHub repository to this project can be found here:
-    <a href="https://github.com/spdx/ntia-conformance-checker">
-        <i class="fab fa-github-square"></i> spdx/ntia-conformance-checker
-    </a>. <br> The NTIA Conformance Checker can be found on SPDX's online tools
-    <a href="https://tools.spdx.org/app/"> SPDX Online Tool
-    </a>.
-
-        </td>
-
-    </tr>
-
-    </tbody>
-
-</table>
-
-
-<h2>CURRENT ONGOING PROJECT</h2>
-<table>
-
-    <colgroup>
-        <col span="1" style="width:30%">
-        <col span="1" style="width:70%">
-    </colgroup>
-
-    <!-- This is the table body -->
-    <tbody>
-
-    <!-- Row 1: Project 1 -->
-    <tr>
-<!--        <td>-->
-<!--            <img src="imgs/ra1.png" alt="Girl in a jacket" style="width:100px;height:100px;">-->
-<!--            <img src="imgs/ra2.png" alt="Girl in a jacket" style="width:100px;height:100px;">-->
-<!--            <img src="imgs/ra3.png" alt="Girl in a jacket" style="width:100px;height:100px;">-->
-<!--            <img src="imgs/ra4.png" alt="Girl in a jacket" style="width:100px;height:100px;">-->
-<!--            <img src="imgs/ra5.png" alt="Girl in a jacket" style="width:100px;height:100px;">-->
-<!--            <img src="imgs/ra7.png" alt="Girl in a jacket" style="width:100px;height:100px;">-->
-<!--            <img src="imgs/ra8.png" alt="Girl in a jacket" style="width:100px;height:100px;">-->
-<!--            <img src="imgs/ra9.png" alt="Girl in a jacket" style="width:100px;height:100px;">-->
-<!--            <img src="imgs/ra10.png" alt="Girl in a jacket" style="width:100px;height:100px;">-->
-<!--        <td>-->
-
-            <h3> REAL ESTATE SIMULATION </h3>
-            <p> This real estate simulation project that I am working on is a database that provides a list
-                of buyers, agents, and listings, provided a list of a parameters that the user inputs for the query. Further, this
-                application allows users to add, update, and delete buyers, agents, and listings from the database. This real
-                estate simulation uses MySQL for its database, express/node.js for the server, and React.js for the client.
-                The database is designed to minimize redundancy while reducing insertion, deletion, and update anomalies.
-                This is achieved by merging specific relations within the database, as well as ensuring all relations are in bcnf.</p>
-            <p>This project can be found on
-    <a href="https://github.com/patricknoda11/real-estate-simulation">
-        <i class="fab fa-github-square"></i> github
-    </a>.
-</p>
-
-        </td>
-
-    </tr>
-
-    </tbody>
-
-</table>
-
-<h2>CURRENT ONGOING PROJECT</h2>
-<table>
-
-    <colgroup>
-        <col span="1" style="width:30%">
-        <col span="1" style="width:70%">
-    </colgroup>
-
-    <!-- This is the table body -->
-    <tbody>
-
-    <!-- Row 1: Project 1 -->
-    <tr>
-<!--        <td>-->
-<!--            <img src="imgs/c_search.gif" alt="Girl in a jacket" style="width:100px;height:100px;">-->
-<!--            <img src="imgs/c_search3.gif" alt="Girl in a jacket" style="width:100px;height:100px;">-->
-<!--            <img src="imgs/r_seach1.gif" alt="Girl in a jacket" style="width:100px;height:100px;">-->
-<!--            <img src="imgs/r_search.gif" alt="Girl in a jacket" style="width:100px;height:100px;">-->
-<!--            <img src="imgs/r_search2.gif" alt="Girl in a jacket" style="width:100px;height:100px;">-->
-<!--            <img src="imgs/r_search4.gif" alt="Girl in a jacket" style="width:100px;height:100px;">-->
-<!--            <img src="imgs/c_chooser.gif" alt="Girl in a jacket" style="width:100px;height:100px;">-->
-<!--            <img src="imgs/rsearch.gif" alt="Girl in a jacket" style="width:100px;height:100px;">-->
-<!--            <img src="imgs/rsearch_5.gif" alt="Girl in a jacket" style="width:100px;height:100px;">-->
-<!--        <td>-->
-
-            <h3> UBC QUERY EXPLORER </h3>
-            <p> This UBC query explorer I am working on is a simple database that provides a list of either UBC courses
-    or rooms given a query with a matching criteria. Specifically, it allows users to add data sets of UBC courses,
-    and then proceeds to make some query like <q> show me all courses with an average > 60% </q> or <q> show me all
-        courses that
-        are taught by this instructor</q>. The project consists mostly of TypeScript for the backend while the requests
-    and
-    results are in JSON. The majority of the code involves asynchronous code, using promises. Tests are written with
-    Mocha and Chai. </p>
-            <p>This project can be found on
-    <a href="https://github.com/linynjosh/UBC-Query-Explorer">
-        <i class="fab fa-github-square"></i> github
-    </a>.
-</p>
-
-        </td>
-
-    </tr>
-
-    </tbody>
-
-</table>
-
-
-
-
-<h2>C++ Project</h2>
-<table>
-
-    <colgroup>
-        <col span="1" style="width:30%">
-        <col span="1" style="width:70%">
-    </colgroup>
-
-    <!-- This is the table body -->
-    <tbody>
-
-    <!-- Row 1: Project 1 -->
-    <tr>
-        <td>
-            <img src="imgs/dfsrain.gif" alt="Girl in a jacket" style="width:100px;height:100px;">
-            <img src="imgs/bfsrain.gif" alt="Girl in a jacket" style="width:100px;height:100px;">
-            <img src="imgs/bfsgrid.gif" alt="Girl in a jacket" style="width:100px;height:100px;">
-            <img src="imgs/dfsgrid.gif" alt="Girl in a jacket" style="width:100px;height:100px;">
-            <img src="imgs/bfsgrad.gif" alt="Girl in a jacket" style="width:100px;height:100px;">
-            <img src="imgs/dfsgrad.gif" alt="Girl in a jacket" style="width:100px;height:100px;">
-            <img src="imgs/bfssolid.gif" alt="Girl in a jacket" style="width:100px;height:100px;">
-            <img src="imgs/dfssolid.gif" alt="Girl in a jacket" style="width:100px;height:100px;">
-            <img src="imgs/bfsrain.gif" alt="Girl in a jacket" style="width:100px;height:100px;">
-        <td>
-
-            <h3> FLOOD FILL </h3>
-            <p> This is a program that executes a "flood fill" on a PNG image when specified a point on the image and a
-                fill
-                pattern.
-                The code uses a breadth-first-search and depth-first-search to create fill algorithms to fill images
-                with rainbow
-                solid, gradient, and grid fill patterns. </p>
-            <p>
-                <a href="https://github.com/linynjosh/Flood-Fills">
-                    <i class="fab fa-github-square"></i> github
-                </a>
-            </p>
-
-        </td>
-
-    </tr>
-
-    </tbody>
-
-</table>
-
-<!-- We can also list out projects in table form -->
-<h2>Java Project</h2>
-<table>
-
-    <colgroup>
-        <col span="1" style="width:30%">
-        <col span="1" style="width:70%">
-    </colgroup>
-
-    <!-- This is the table body -->
-    <tbody>
-
-    <!-- Row 1: Project 1 -->
-    <tr>
-        <td><img src="imgs/sunny.png" alt="Girl in a jacket" style="width:100px;height:70px;">
-            <img src="imgs/cloud.png" alt="Girl in a jacket" style="width:100px;height:70px;">
-            <img src="imgs/snowflake.png" alt="Girl in a jacket" style="width:100px;height:70px;">
-            <img src="imgs/cloudy.png" alt="Girl in a jacket" style="width:100px;height:70px;">
-            <img src="imgs/humid.png" alt="Girl in a jacket" style="width:100px;height:70px;">
-            <img src="imgs/rain.png" alt="Girl in a jacket" style="width:100px;height:70px;"></td>
-
-        <td>
-
-            <h3> TODO-APPLICATION </h3>
-            <p> A planner app that manages different tasks by categorizing them according to their corresponding due
-                dates or tags.
-                Included functionality to add, remove, and view tasks and reminder while reading in daily weather and
-                news data
-                from <a href="https://openweathermap.org/">
-                    </i> openweathermap.org
-                </a> and <a href="https://newsapi.org/">
-                    </i> newsapi.org
-                </a> from APIs according to user scanner input. </p>
-            <p>
-                <a href="https://github.com/linynjosh/Todo-Application">
-                    <i class="fab fa-github-square"></i> github
-                </a>
-            </p>
-
-        </td>
-
-    </tr>
-
-
-    </tbody>
-
-</table>
-
-
-<h2>Python Projects</h2>
-<table>
-
-    <colgroup>
-        <col span="1" style="width:30%">
-        <col span="1" style="width:70%">
-    </colgroup>
-
-    <!-- This is the table body -->
-    <tbody>
-    <!-- Row 3: Project 3 -->
-    <tr>
-        <td><img src="imgs/earth.gif"></td>
-
-        <td>
-
-            <h3> EARTHQUAKE EFFECTS </h3>
-            <p> A website containing Kepler.GL visualizations of major international earthquakes
-                based on deaths and injuries caused, and the magnitude and depth of the earthquake. Every earthquake
-                contains one of the following characteristics: approximately $1 million or more damage, 10+ deaths,
-                magnitudes of at least 7.5, modified Mercalli intensity X or greater, or a tsunami generated. </p>
-            <p>
-                <a href="https://github.com/linynjosh/earthquake-vis">
-                    <i class="fab fa-github-square"></i> github
-                </a>
-                <a href="https://linynjosh.github.io/earthquake-vis/">
-                    <i class="fas fa-globe-americas"></i> web app link
-                </a>
-            </p>
-
-        </td>
-
-    </tr>
-
-    <!-- Row 1: Project 1 -->
-    <tr>
-        <td><img src="imgs/demo.gif"></td>
-
-        <td>
-
-            <h3> RAP OR COUNTRY? </h3>
-            <p> An analysis comparing top Billboard rap and country music based on their average word count,
-                average word length, lexical diversity, word frequency, and text sentiment. </p>
-            <p>
-                <a href="https://github.com/linynjosh/music-lyric-vis">
-                    <i class="fab fa-github-square"></i> github
-                </a>
-            </p>
-
-        </td>
-
-    </tr>
-
-    <!-- Row 2: Project 2 -->
-
-
-    <tr>
-        <td><img src="imgs/lexi.gif"></td>
-        <td>
-
-            <h3> CRIME AND DEMOGRAPHICS: NYC </h3>
-            <p> A streamlit web app hosted on Heroku visualizing 5+ million instances of crime in New York City.
-                The visualization is based on the offender's race, gender, age, offense, crime location, and date.</p>
-            <p>
-                <a href="https://github.com/linynjosh/nypd-crime-vis">
-                    <i class="fab fa-github-square"></i> github
-                </a>
-                <a href="https://nypd-crime-vis.herokuapp.com/">
-                    <i class="fas fa-city"></i> web app link
-                </a>
-            </p>
-
-        </td>
-
-    </tr>
-
-    <tr>
-        <td><img src="imgs/sat.gif"></td>
-        <td>
-            <h3> THE SATELLITES RACE: ROUND 1 </h3>
-            <p>
-                An interactive web app that shows the number of satellites launched and operated by a country at any
-                specific year spanning from 1975-2020. The visualization is based on the purposes of the satellites –
-                military, civil, commercial, and government – of each country from 1975-2020.
-            </p>
-            <p>
-                <a href="https://satellite-vis.herokuapp.com/">
-                    <i class="fab fa-github-square"></i> github
-                </a>
-            </p>
-
-        </td>
-
-    </tr>
-
-    </tbody>
-
-</table>
-<center><h2> And...</h2></center>
-
-<footer>
-    <br>
-    <p> My siblings <a href="https://estherlin.github.io/">
-        Esther,
-    </a> <a href="https://rebeccayelin.github.io/">
-        Rebecca,
-    </a> and <a href="https://samuellinlin.github.io/">
-        Sam
-    </a> do neat work and we sometimes collaborate. Check out their work!</p>
-    <br>
-
-</footer>
-
+            They're called Bit and Byte.
+              <br>
+              PS: <a href="https://rebeccayelin.github.io/" href="_blank">Rebecca</a> named them :)
+          </td>
+        </tr>
+            <!-- next -->
+      </tbody>
+    </table>
+  </section>
+
+  <br>
+
+  <!-- personal -->
+  <section>
+    <h2>and...</h2>
+    <ul>
+      <li>
+        My siblings
+        <a href="https://estherlin.github.io/" href="_blank">Esther</a>,
+        <a href="https://rebeccayelin.github.io/" href="_blank">Rebecca</a>, and
+        <a href="https://samuelLinLin.github.io/" href="_blank">Sam</a>
+        do neat work. Check them out!
+      </li>
+    </ul>
+  </section>
+
+  <br>
+
+  <!-- footer -->
+  <section>
+    <small>
+      Updated Dec 26 2022  <br>
+      Thanks, <a href="https://estherlin.github.io/" href="_blank">Esther</a> for the template!
+
+    </small>
+  </section>
 
 </body>
-
-<footer>
-    <p>Made by Joshua Lin</p>
-    <br>
-    <p> Jan 28 2022</p>
-</footer>
 
 </html>
