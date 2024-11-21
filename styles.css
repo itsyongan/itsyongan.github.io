@@ -1,12 +1,20 @@
 :root {
     /* setting for light mode */
-    --dark-font-color: #555;
+    /* --dark-font-color: #555;
     --dark-bg-color: #fff;
-    --dark-link-color: #000;
+    --dark-link-color: #000; */
     /* setting for dark mode */
-    --font-color: #fff;
+    /* --font-color: #fff;
     --bg-color: #222222;
-    --link-color: #48C9B0;
+    --link-color: #48C9B0; */
+
+    --dark-font-color: #fff;
+    --dark-bg-color: #222222;
+    --dark-link-color: #48C9B0; 
+
+    --font-color: #737373;
+    --bg-color: #111111;
+    --link-color: #75dde4; 
 }
 
 body {
