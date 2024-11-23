@@ -19,6 +19,8 @@
 
 .highlight-date {
     background-color: #75dde4; /* Choose your preferred color */
+    padding-left: 1px;
+    padding-right: 1px;
 }
 
 body {
