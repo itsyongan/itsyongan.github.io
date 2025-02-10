@@ -213,7 +213,10 @@ hr {
 }
 
 .circular-square {
-    border-radius: 50%;
+    width: 100px; /* Set a fixed width */
+    height: 100px; /* Match height to width */
+    object-fit: cover; /* Ensures the image covers the space properly */
+    border-radius: 50%; /* Makes it a perfect circle */
 }
 
 #title {
