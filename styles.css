@@ -12,13 +12,13 @@
     --dark-bg-color: #222222;
     --dark-link-color: #48C9B0; 
 
-    --font-color: #939393;
-    --bg-color: #000000;
-    --link-color: #75dde4; 
+    --font-color: #130f0f;
+    --bg-color: #4f6b86;
+    --link-color: #c1ab63; 
 }
 
 .highlight-date {
-    background-color: #75dde4; /* Choose your preferred color */
+    background-color: #8b7747; /* Choose your preferred color */
     padding-left: 2px;
     padding-right: 2px;
 }
